@@ -3,7 +3,7 @@ from unittest import TestCase
 from main.day1.day1part2 import calculate_fuel, calculate_total_fuel
 
 
-class TestDay1Part1(TestCase):
+class TestDay1Part2(TestCase):
 
     def test_calculate_fuel__correct_results(self):
         # Given
