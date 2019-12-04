@@ -1,3 +1,5 @@
+from itertools import product
+
 f = open("/Users/mcneillc/Dev/my-stuff/advent-of-code-2019/inputs/day2input.txt", "r")
 program = f.readlines()[0].split(',')
 program = [int(val) for val in program]
@@ -16,10 +18,20 @@ def run_program(input):
     return input
 
 
+def find_inputs():
+    combos = list(product(list(range(100)), repeat=2))
+    for combo in combos:
+        attempt = program.copy()
+        attempt[1] = combo[0]
+        attempt[2] = combo[1]
+        run = run_program(attempt)
+        if run[0] == 19690720:
+            return combo
+
+
 def main():
-    program[1] = 12
-    program[2] = 2
-    return run_program(program)[0]
+    (noun, verb) = find_inputs()
+    return (100 * noun) + verb
 
 
 print(main())
