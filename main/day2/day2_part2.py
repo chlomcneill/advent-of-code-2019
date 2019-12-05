@@ -34,4 +34,4 @@ def main():
     return (100 * noun) + verb
 
 
-print(main())
+# print(main())

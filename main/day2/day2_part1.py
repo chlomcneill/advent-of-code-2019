@@ -22,4 +22,4 @@ def main():
     return run_program(program)[0]
 
 
-print(main())
+# print(main())

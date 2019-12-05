@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from main.day2.day2part1 import run_program
+from main.day2.day2_part1 import run_program
 
 
 class TestDay2Part1(TestCase):

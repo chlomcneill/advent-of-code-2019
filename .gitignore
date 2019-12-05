@@ -3,3 +3,5 @@ bin
 include
 .idea
 .pytest_cache
+*.pyc
+__pycache__

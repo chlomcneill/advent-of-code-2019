@@ -28,7 +28,7 @@ def main():
     return total_fuel
 
 
-print(main())
+# print(main())
 
 
 

@@ -1,9 +1,9 @@
 from unittest import TestCase
 
-from main.day3.day3_part1 import find_closest_intersection
+from main.day3.day3_part2 import find_closest_intersection
 
 
-class TestDay3Part1(TestCase):
+class TestDay3Part2(TestCase):
 
     def test_find_closest_intersection__correct_results(self):
         # Given
@@ -26,9 +26,9 @@ class TestDay3Part1(TestCase):
         result3 = find_closest_intersection(wires3)
 
         # Then
-        expected_result1 = 6
-        expected_result2 = 159
-        expected_result3 = 135
+        expected_result1 = 30
+        expected_result2 = 610
+        expected_result3 = 410
 
         self.assertEqual(result1, expected_result1)
         self.assertEqual(result2, expected_result2)

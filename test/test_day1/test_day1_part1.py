@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from main.day1.day1part1 import calculate_fuel
+from main.day1.day1_part1 import calculate_fuel
 
 
 class TestDay1Part1(TestCase):
