@@ -4,9 +4,6 @@ masses = [int(mass[:-1]) for mass in masses]
 f.close()
 
 
-# print(masses)
-
-
 def calculate_fuel(mass):
     return int(mass / 3) - 2
 
