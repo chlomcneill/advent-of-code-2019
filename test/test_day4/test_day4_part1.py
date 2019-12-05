@@ -3,7 +3,7 @@ from unittest import TestCase
 from main.day4.day4_part1 import check_password, check_length, check_increasing, check_double_digits
 
 
-class TestDay3Part1(TestCase):
+class TestDay4Part1(TestCase):
 
     def test_check_length__correct_results(self):
         # Given
