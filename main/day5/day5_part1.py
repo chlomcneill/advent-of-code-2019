@@ -61,9 +61,6 @@ def process_program(input_val, program):
             first_value = program[pointer]
             opcode, mode_param_1, mode_param_2 = decipher_first_value(first_value)
 
-        elif opcode == '99':
-            return
-
 
 def main():
     input_value = input("Please enter an input value: ")
