@@ -10,7 +10,6 @@ def retrieve_objects(orbit):
 
 
 def find_inner_orbits(orbits, pointer):
-    orbits = [retrieve_objects(orbit) for orbit in orbits]
     inner_orbits = 0
     orbit = orbits[pointer]
     obj1, obj2 = orbit[0], orbit[1]
@@ -31,12 +30,12 @@ def find_inner_orbits(orbits, pointer):
 
 
 def calculate_orbits(orbits):
+    orbits = [retrieve_objects(orbit) for orbit in orbits]
     total_orbits = 0
     pointer = 0
 
     while pointer < len(orbits):
         total_orbits += find_inner_orbits(orbits, pointer)
-        # print(total_orbits)
         pointer += 1
 
     return total_orbits
