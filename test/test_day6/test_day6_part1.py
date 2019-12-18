@@ -3,7 +3,7 @@ from unittest import TestCase
 from main.day6.day6_part1 import calculate_orbits
 
 
-class TestDay5Part2(TestCase):
+class TestDay6Part2(TestCase):
 
     def test_calculate_orbits__corrects_results(self):
         # Given

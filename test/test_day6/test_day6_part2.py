@@ -3,7 +3,7 @@ from unittest import TestCase
 from main.day6.day6_part2 import calculate_minimum_orbital_transfers
 
 
-class TestDay5Part2(TestCase):
+class TestDay6Part2(TestCase):
 
     def test_calculate_orbits__corrects_results(self):
         # Given
